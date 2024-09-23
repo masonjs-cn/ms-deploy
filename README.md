@@ -10,6 +10,8 @@ npm i @masonjs/deploy -D
 ## Examples
 
 ```js
+const deployToServer = require("@masonjs/deploy");
+
 // 使用示例
 const SERVER_LIST = [
   {
@@ -35,4 +37,6 @@ const SERVER_LIST = [
     url: "http://example2.com",
   },
 ];
+
+deployToServer(SERVER_LIST); // 部署到第一个服务器
 ```
